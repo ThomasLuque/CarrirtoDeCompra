@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda de Electrónica</title>
+</head>
+<body>
+    <header>
+        <h1>GamerShop</h1>
+    </header>
+
+    <section class="cajita">
+        <div class="cajitaconProductos" id="cajitaconProductos"></div>
+        
+        <div id="cajaCarrito" class="carrito">
+            <h2>Carrito</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Sub total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tablaProductosCarrito">
+                   
+                </tbody>
+            </table>
+            <div id="totalCarrito"></div>
+            <button id="vaciarCarrito" onclick="carrito.vaciarCarrito(); mostrarProductosCarrito();mostrarTotalCarrito()">Vaciar Carrito</button>
+            <button id="comprar" onclick="btnComprar();carrito.vaciarCarrito();mostrarProductosCarrito();mostrarTotalCarrito()">Comprar</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 GamerShop. Todos los derechos reservados.</p>
+           
+        </div>
+    </footer>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

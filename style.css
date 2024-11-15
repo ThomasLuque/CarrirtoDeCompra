@@ -1,0 +1,186 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:   'Trebuchet MS';
+    background-color: #36154d00;
+}
+header{
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 150px;
+}
+header h1{
+    text-align: center;
+    font-size: 80px;
+    background-color: #66666611; 
+    color: #ffffff;
+    padding: 30px 0;
+}
+.cajita{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+
+.cajita .cajitaconProductos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:30px;
+    width: 100%;
+    transition: .3s;
+}
+.cajita .cajitaconProductos .producto{
+    max-width: 200px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+.cajita .cajitaconProductos .producto .imagen-producto{
+    width: 100%;
+}
+.cajita .cajitaconProductos .producto:hover{
+    box-shadow: 0 0 20px #1e0980;
+    scale: 1.05;
+}
+.cajita .cajitaconProductos .producto .titulo-producto{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cajita .cajitaconProductos .producto .precio-producto{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cajita .cajitaconProductos .producto .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.cajita .carrito {
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left:30px ;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: .3s;  
+}
+.cajita .carrito:hover{
+    box-shadow: 0 0 20px #1e0980;
+    scale: 1.02;
+}
+
+.cajita .carrito h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1e0980;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cajita .carrito table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cajita .carrito table th, 
+.cajita .carrito table td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cajita .carrito table th {
+    background-color: #1e0980;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.cajita .carrito table td {
+    background-color: #f3f3f3;
+}
+
+.cajita .carrito #totalCarrito {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e0980;
+}
+
+.cajita .carrito #vaciarCarrito {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: brown;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cajita .carrito #comprar{
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #1e0980;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cajita .carrito button:hover {
+    background-color: #1e0980;
+    transition: .3s;
+}
+
+
+footer {
+    background-color: #1e0980;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+
